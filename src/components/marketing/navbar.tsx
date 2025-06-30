@@ -1,20 +1,19 @@
 import { NAV_LINKS } from "@/constants";
 import Link from "next/link";
 import Icons from "../global/icons";
-import Wrapper from "../global/wrapper";
 import { Button } from "../ui/button";
 import MobileMenu from "./mobile-menu";
 
 const Navbar = () => {
     return (
         <header className="sticky top-0 w-full h-16 bg-background/80 backdrop-blur-sm z-50">
-            <Wrapper className="h-full">
+            <div className="w-full mx-auto lg:mx-auto px-4 md:px-12 h-full">
                 <div className="flex items-center justify-between h-full">
                     <div className="flex items-center">
                         <Link href="/" className="flex items-center gap-2">
                             <Icons.icon className="w-6" />
                             <span className="text-xl font-semibold hidden lg:block">
-                                Vetra
+                                Sqeema
                             </span>
                         </Link>
                     </div>
@@ -32,7 +31,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="flex items-center gap-4">
-                        <Link href="#" className="hidden lg:block">
+                        <Link href="/login" className="hidden lg:block">
                             <Button variant="blue">
                                 Get Started
                             </Button>
@@ -40,7 +39,7 @@ const Navbar = () => {
                         <MobileMenu />
                     </div>
                 </div>
-            </Wrapper>
+            </div>
         </header>
     )
 };
