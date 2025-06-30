@@ -9,12 +9,12 @@ import { Button } from "../ui/button";
 import Ripple from "../ui/ripple";
 
 const SOCIAL_PLATFORMS = [
-    { icon: Icons.linkedin, position: "left-3", size: "small", iconSize: "small", className: "hidden lg:flex" },
-    { icon: Icons.tiktok, position: "left-2", size: "medium", iconSize: "medium" },
-    { icon: Icons.insta, position: "left-1", size: "large", iconSize: "large" },
-    { icon: Icons.youtube, position: "right-1", size: "large", iconSize: "large" },
-    { icon: Icons.x, position: "right-2", size: "medium", iconSize: "medium" },
-    { icon: Icons.facebook, position: "right-3", size: "small", iconSize: "small", className: "hidden lg:flex" }
+    { icon: Icons.mariadb, position: "left-3", size: "small", iconSize: "small", className: "hidden lg:flex" },
+    { icon: Icons.mysql, position: "left-2", size: "medium", iconSize: "medium" },
+    { icon: Icons.supabase, position: "left-1", size: "large", iconSize: "large" },
+    { icon: Icons.mongodb, position: "right-1", size: "large", iconSize: "large" },
+    { icon: Icons.postgresql, position: "right-2", size: "medium", iconSize: "medium" },
+    { icon: Icons.sqlite, position: "right-3", size: "small", iconSize: "small", className: "hidden lg:flex" }
 ];
 
 const Integration = () => {
@@ -70,7 +70,7 @@ const Integration = () => {
 
             <div className="flex flex-col items-center text-center max-w-3xl mx-auto lg:absolute lg:top-1/4 inset-x-0 mt-12 lg:mt-0">
                 <h2 className="text-2xl md:text-4xl lg:text-6xl font-heading font-semibold !leading-snug">
-                    Social Media Integration
+                    Seamless database integration
                 </h2>
             </div>
             <div className="flex flex-col items-center text-center max-w-3xl mx-auto lg:absolute lg:bottom-1/4 inset-x-0 z-20 mt-8 lg:mt-0">

@@ -1,4 +1,11 @@
 import { LucideProps } from "lucide-react";
+import Image, { ImageProps } from "next/image";
+import mariadb from "../../../public/icons/mariadb.svg";
+import mysql from "../../../public/icons/mysql.svg";
+import postgresql from "../../../public/icons/postgresql.svg";
+import supabase from "../../../public/icons/supabase.svg";
+import sqlite from "../../../public/icons/sqlite.svg";
+import mongodb from "../../../public/icons/mongodb.svg";
 
 const Icons = {
     icon: (props: LucideProps) => (
@@ -64,7 +71,7 @@ const Icons = {
         </svg>
     ),
     youtube: (props: LucideProps) => (
-        <svg {...props} width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg {...props} width={props.width ?? "48"} height={props.height ?? "48"} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_17_47)">
                 <path d="M47.044 12.3709C46.7726 11.3497 46.2378 10.4178 45.493 9.66822C44.7483 8.91869 43.8197 8.37791 42.8003 8.1C39.0476 7.09091 24.0476 7.09091 24.0476 7.09091C24.0476 7.09091 9.04761 7.09091 5.29488 8.1C4.27547 8.37791 3.34693 8.91869 2.60218 9.66822C1.85744 10.4178 1.32262 11.3497 1.05124 12.3709C0.0476075 16.14 0.0476074 24 0.0476074 24C0.0476074 24 0.0476075 31.86 1.05124 35.6291C1.32262 36.6503 1.85744 37.5822 2.60218 38.3318C3.34693 39.0813 4.27547 39.6221 5.29488 39.9C9.04761 40.9091 24.0476 40.9091 24.0476 40.9091C24.0476 40.9091 39.0476 40.9091 42.8003 39.9C43.8197 39.6221 44.7483 39.0813 45.493 38.3318C46.2378 37.5822 46.7726 36.6503 47.044 35.6291C48.0476 31.86 48.0476 24 48.0476 24C48.0476 24 48.0476 16.14 47.044 12.3709Z" fill="currentColor" />
                 <path d="M19.1385 31.1373V16.8628L31.684 24.0001L19.1385 31.1373Z" fill="black" />
@@ -77,9 +84,27 @@ const Icons = {
         </svg>
     ),
     tiktok: (props: LucideProps) => (
-        <svg {...props} width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg {...props} width={props.width ?? "48"} height={props.height ?? "48"} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M34.1451 0H26.0556V32.6956C26.0556 36.5913 22.9444 39.7913 19.0725 39.7913C15.2007 39.7913 12.0894 36.5913 12.0894 32.6956C12.0894 28.8696 15.1315 25.7391 18.8651 25.6V17.3913C10.6374 17.5304 4 24.2783 4 32.6956C4 41.1827 10.7757 48 19.1417 48C27.5075 48 34.2833 41.1131 34.2833 32.6956V15.9304C37.3255 18.1565 41.059 19.4783 45 19.5479V11.3391C38.9157 11.1304 34.1451 6.12173 34.1451 0Z" fill="currentColor" />
         </svg>
+    ),
+    mariadb: (props: Partial<ImageProps>) => (
+        <Image src={mariadb} alt="MariaDB" width={40} height={40} {...props} />
+    ),
+    mysql: (props: Partial<ImageProps>) => (
+        <Image src={mysql} alt="MySQL" width={40} height={40} {...props} />
+    ),
+    postgresql: (props: Partial<ImageProps>) => (
+        <Image src={postgresql} alt="PostgreSQL" width={40} height={40} {...props} />
+    ),
+    supabase: (props: Partial<ImageProps>) => (
+        <Image src={supabase} alt="Supabase" width={40} height={40} {...props} />
+    ),
+    sqlite: (props: Partial<ImageProps>) => (
+        <Image src={sqlite} alt="SQLite" width={40} height={40} {...props} />
+    ),
+    mongodb: (props: Partial<ImageProps>) => (
+        <Image src={mongodb} alt="MongoDB" width={40} height={40} {...props} />
     ),
 };
 
