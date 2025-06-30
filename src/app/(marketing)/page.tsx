@@ -1,5 +1,4 @@
 import Wrapper from "@/components/global/wrapper";
-import Analysis from "@/components/marketing/analysis";
 import CTA from "@/components/marketing/cta";
 import Features from "@/components/marketing/features";
 import Hero from "@/components/marketing/hero";
@@ -10,7 +9,6 @@ const HomePage = () => {
         <Wrapper className="relative">
             <Hero />
             <Features />
-            <Analysis />
             <Integration />
             <CTA />
         </Wrapper>
