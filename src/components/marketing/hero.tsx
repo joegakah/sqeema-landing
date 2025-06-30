@@ -38,12 +38,7 @@ const Hero = () => {
                             with AI
                         </h1>
                     </Container>
-                    <Container delay={0.2}>
-                        <p className="max-w-xl mx-auto mt-2 mb-6 text-base lg:text-lg text-center text-muted-foreground">
-                            AI-enhanced database design tool perfect for developers, database administrators, and students who want to build better, more efficient database structures with ease.
-                        </p>
-                    </Container>
-                    <Container delay={0.25} className="z-20">
+                    <Container delay={0.25} className="z-20 mt-8">
                         <div className="mx-auto max-w-2xl">
                             <form className="relative w-full items-center gap-3 bg-gradient-to-tr rounded-3xl p-px overflow-hidden from-primary/5 to-primary/20">
                                 <textarea
@@ -62,6 +57,11 @@ const Hero = () => {
                                 </div>
                             </form>
                         </div>
+                    </Container>
+                    <Container delay={0.2}>
+                        <p className="max-w-xl mx-auto mt-4 mb-6 text-base lg:text-lg text-center text-muted-foreground">
+                            AI-enhanced database design tool perfect for developers, database administrators, and students who want to build better, more efficient database structures with ease.
+                        </p>
                     </Container>
                     <Container delay={0.3} className="relative">
                         <Container className="hidden lg:flex absolute inset-0 top-0 mb-auto flex-col items-center justify-center w-full min-h-screen -z-10">

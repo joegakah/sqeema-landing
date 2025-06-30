@@ -8,7 +8,7 @@ import Particles from "../ui/particles";
 
 const CTA = () => {
     return (
-        <div className="relative flex flex-col items-center justify-center w-full py-20">
+        <div className="relative flex flex-col items-center justify-center w-full">
             <Container className="py-20 max-w-6xl mx-auto">
                 <div className="relative flex flex-col items-center justify-center py-12 lg:py-20 px-0 rounded-2xl lg:rounded-3xl bg-background/20 text-center border border-foreground/20 overflow-hidden">
                     <Particles
@@ -41,12 +41,12 @@ const CTA = () => {
                         }}
                     />
                     <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-medium !leading-snug">
-                        Ready to boost your <br /> <span className="font-subheading italic">marketing</span> ?
+                       Try Sqeema for Free <br /> Design & Optimize Instantly
                     </h2>
                     <p className="text-sm md:text-lg text-center text-accent-foreground/80 max-w-2xl mx-auto mt-4">
-                        Transform your marketing with AI-powered automation. Create campaigns faster, generate better content <span className="hidden lg:inline">and make smarter decisions in minutes.</span>
+                        Design, visualize, and improve your databases with AI-powered precision — all in one intuitive workspace.
                     </p>
-                    <Link href="#pricing" className="mt-8">
+                    <Link href="/login" className="mt-8">
                         <Button size="lg">
                             Let&apos;s get started
                         </Button>
